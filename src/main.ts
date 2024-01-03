@@ -39,9 +39,6 @@ const MDM_LINK = command.mdmLink;
 const LINKEDIN_LINK = command.social.linkedin;
 const GITHUB_LINK = command.social.github;
 const EMAIL_LINK = command.social.email;
-const METAMASK_LINK = command.notify.metamask;
-const ANDROID_LINK = command.notify.android;
-const IOS_LINK = command.notify.ios;
 
 
 const scrollToBottom = () => {
