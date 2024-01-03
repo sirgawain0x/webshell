@@ -3,7 +3,8 @@ import { HELP } from "./commands/help";
 import { BANNER } from "./commands/banner";
 import { ABOUT } from "./commands/about"
 import { DEFAULT } from "./commands/default";
-import { apps } from "./commands/apps";
+import { JOIN } from "./commands/join";
+import { APPS } from "./commands/apps";
 import { createWhoami } from "./commands/whoami";
 
 //mutWriteLines gets deleted and reassigned
@@ -28,14 +29,16 @@ const PRE_USER = document.getElementById("pre-user");
 const HOST = document.getElementById("host");
 const USER = document.getElementById("user");
 const PROMPT = document.getElementById("prompt");
-const COMMANDS = ["help", "about", "apps", "whoami", "docs", "banner", "clear"];
+const COMMANDS = ["help", "about", "apps", "mdm", "join", "whoami", "docs", "banner", "clear"];
 const HISTORY : string[] = [];
 const SUDO_PASSWORD = command.password;
 const REPO_LINK = command.repoLink;
 const DOCS_LINK = command.docsLink;
+const MDM_LINK = command.mdmLink;
 const LINKEDIN_LINK = command.social.linkedin;
 const GITHUB_LINK = command.social.github;
 const EMAIL_LINK = command.social.email;
+
 
 const scrollToBottom = () => {
   const MAIN = document.getElementById("main");
@@ -195,7 +198,7 @@ function commandHandler(input : string) {
       break;
     case 'banner':
       if(bareMode) {
-        writeLines(["Creative Platform v1.0.0", "<br>"])
+        writeLines(["The Creative v1.0.0", "<br>"])
         break;
       }
       writeLines(BANNER);
@@ -221,17 +224,30 @@ function commandHandler(input : string) {
       }
       writeLines(ABOUT);
       break;
+    case 'join':
+      if(bareMode) {
+        writeLines(["Nothing to see here.", "<br>"])
+        break;
+      }
+      writeLines(JOIN);
+      break;
     case 'apps':
       if(bareMode) {
         writeLines(["I don't want you to break the other apps.", "<br>"])
         break;
       }
-      writeLines(apps);
+      writeLines(APPS);
       break;
     case 'docs':
       writeLines(["Redirecting to creativeplatform.xyz...", "<br>"]);
       setTimeout(() => {
         window.open(DOCS_LINK, '_blank');
+      }, 500);
+      break;
+    case 'mdm':
+      writeLines(["Redirecting to Creative MDM...", "<br>"]);
+      setTimeout(() => {
+        window.open(MDM_LINK, '_blank');
       }, 500);
       break;
     case 'repo':

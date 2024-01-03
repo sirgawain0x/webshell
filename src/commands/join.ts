@@ -1,29 +1,28 @@
 import command from '../../config.json' assert {type: 'json'};
 
-const createProject = () : string[] => {
-  let string = "";
-  const apps : string[] = [];
-  const files = `${command.apps.length} File(s)`;
-  // const SPACE = "&nbsp;";
+const createJoin = () : string[] => {
+    let string = "";
+    const join : string[] = [];
+    const option = `${command.join.length} Option(s)`;
 
-  apps.push("<br>")
+    join.push("<br>")
 
-  command.apps.forEach((ele) => {
+  command.join.forEach((ele) => {
     let link = `<a href="${ele[2]}" target="_blank">${ele[0]}</a>`;
     string += `<div style='display: flex; align-items: center; justify-content: start; gap: 25px;'>
                  <div style='flex-shrink: 0;'>${link}</div>
                  <div>${ele[1]}</div>
                </div>`;
-    apps.push(string);
+    join.push(string);
     string = '';
   });
   
   
 
-  apps.push("<br>");
-  apps.push(files);
-  apps.push("<br>");
-  return apps
+  join.push("<br>");
+  join.push(option);
+  join.push("<br>");
+  return join
 }
 
-export const APPS = createProject();
+export const JOIN = createJoin();
