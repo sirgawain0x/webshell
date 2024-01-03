@@ -48,7 +48,7 @@ Most of the configuration is done in the `config.json` file.
     "linkedin": "dugthedog"
   },
   "aboutGreeting": "My name is Dug. I have just met you.",
-  "projects": [
+  "apps": [
     [
       "Project Name",
       "Project Description",

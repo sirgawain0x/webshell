@@ -34,7 +34,7 @@ const createAbout = () : string[] => {
   string += SPACE.repeat(2);
   string += linkedin;
   string += SPACE.repeat(17 - LINKEDIN.length);  
-  string += `<a target='_blank' href='https://www.linkedin.com/in/${command.social.linkedin}'>linkedin/${command.social.linkedin}</a>`;
+  string += `<a target='_blank' href='https://www.linkedin.com/company/${command.social.linkedin}'>linkedin/${command.social.linkedin}</a>`;
   about.push(string);
 
   about.push("<br>");
