@@ -5,7 +5,7 @@ const helpObj = {
     "Who made this website?",
     ],
     [
-      "'projects'",
+      "'apps'",
       "Maybe there's something interesting."
     ],
     [
@@ -18,6 +18,10 @@ const helpObj = {
     [
       "'repo'",
       "View the Github Repository."
+    ],
+    [
+      "'docs'",
+      "View the documentaion."
     ],
     ["'banner'",
       "Display the banner."
