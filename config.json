@@ -7,7 +7,7 @@
    " ╚██████╗██║  ██║███████╗██║  ██║   ██║   ██║ ╚████╔╝ ███████╗ ",
    "  ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═══╝  ╚══════╝ "
   ],
-  "title": "Creative Terminal",
+  "title": "The Creative",
   "username": "crtv",
   "hostname": "thecreative.eth",
   "password": "123019",
@@ -18,22 +18,54 @@
     "github": "creativeplatform",
     "linkedin": "creativeplatform"
   },
-  "aboutGreeting": "Welcome to the Creative Terminal.",
+  "aboutGreeting": "Explore for free as a Fan or join as Creator, Investor, Brand for unique perks.",
   "apps": [
+    [
+      "Community Dashboard",
+      "Community Onboarding & Engagement Tool",
+      "https://app.charmverse.io/creative-like-brown-fowl/"
+    ],
+    [
+      "Dear Creative Mini",
+      "Quick reads on creativity, tech, and blockchain",
+      "https://paragraph.xyz/@dearcrtv"
+    ],
     [
       "Dear Creative",
       "A bi-monthly publication",
       "https://news.creativeplatform.xyz"
     ],
     [
-      "Vote Creative",
+      "Vote",
       "Shape Creative Org DAO's Future",
       "https://vote.creativeplatform.xyz"
     ],
     [
       "Creative TV",
-      "Entertainment, Your Way",
+      "Entertainment, your way",
       "https://tv.creativeplatform.xyz"
+    ]
+  ],
+  "join": [
+    [
+      "Fan Membership",
+      "Ideal for creative and savvy fans, this tier offers community engagement without the cost",
+      "https://app.unlock-protocol.com/checkout?id=28ea0271-209f-4c09-ac04-64ce714d0327"
+    ],
+    [
+      "Creator Membership",
+      "Offering software tools and resources for creatives in arts & entertainment",
+      "https://app.unlock-protocol.com/checkout?id=bbbcff5f-835d-4fa3-9761-988d5da9da18"
+    ],
+    [
+      "Investor Membership",
+      "Exclusive access to investment opportunities, insights, and events in the creative ecosystem",
+      "https://app.unlock-protocol.com/checkout?id=7f9da384-5bae-4075-b02b-90bd197df113"
+    ],
+    [
+      "Brand Membership",
+      "Great for businesses and brands for marketing, partnerships within the creative ecosystem",
+      "https://app.unlock-protocol.com/checkout?id=0c0b9948-f155-445e-9485-96b8d8b6bc6a"
     ]
   ],
   "colors": {
