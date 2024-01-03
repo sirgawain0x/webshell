@@ -1,39 +1,45 @@
 {
   "ascii": [
-    "███████╗██╗  ██╗███████╗██╗     ██╗",
-    "██╔════╝██║  ██║██╔════╝██║     ██║",
-    "███████╗███████║█████╗  ██║     ██║",
-    "╚════██║██╔══██║██╔══╝  ██║     ██║",
-    "███████║██║  ██║███████╗███████╗███████╗",
-    "╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝"
+   " ██╗  ██╗██╗     ██████╗██████╗ ███████╗ █████╗ ████████╗██╗██╗   ██╗███████╗ ",
+   " ██║  ██║██║    ██╔════╝██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██║██║   ██║██╔════╝ ",
+   " ███████║██║    ██║     ██████╔╝█████╗  ███████║   ██║   ██║██║   ██║█████╗ ", 
+   " ██╔══██║██║    ██║     ██╔══██╗██╔══╝  ██╔══██║   ██║   ██║╚██╗ ██╔╝██╔══╝ ",
+   " ██║  ██║██║    ╚██████╗██║  ██║███████╗██║  ██║   ██║   ██║ ╚████╔╝ ███████╗ ",
+   " ╚═╝  ╚═╝╚═╝     ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═══╝  ╚══════╝ "
   ],
-  "title": "WebShell",
-  "username": "visitor",
-  "hostname": "webshell",
-  "password": "050823",
-  "repoLink": "https://github.com/nasan016/webshell",
+  "title": "Creative Terminal",
+  "username": "crtv",
+  "hostname": "thecreative.eth",
+  "password": "123019",
+  "repoLink": "https://github.com/creativeplatform",
+  "docsLink": "https://creativeplatform.xyz/docs/intro",
   "social": {
-    "email": "your@email.com",
-    "github": "yourgithub",
-    "linkedin": "you"
+    "email": "creatives@creativeplatform.xyz",
+    "github": "creativeplatform",
+    "linkedin": "creativeplatform"
   },
-  "aboutGreeting": "Hi stranger. Welcome to WebShell.",
-  "projects": [
+  "aboutGreeting": "Welcome to the Creative Terminal.",
+  "apps": [
     [
-      "GofeR",
-      "Vue.js reactivity in Go.",
-      "https://github.com/nasan016/gofer"
+      "Dear Creative",
+      "A bi-monthly publication",
+      "https://news.creativeplatform.xyz"
     ],
     [
-      "WebShell",
-      "Terminal styled website.",
-      "https://github.com/nasan016/webshell"
+      "Vote Creative",
+      "Govern the future of Creative Organization DAO",
+      "https://vote.creativeplatform.xyz"
+    ],
+    [
+      "Creative TV",
+      "The way your entertainment content should be.",
+      "https://tv.creativeplatform.xyz"
     ]
   ],
   "colors": {
-    "background": "#0C0623",
-    "foreground": "#F8DDE5",
-    "banner": "#FF9951",
+    "background": "#1A202C",
+    "foreground": "#FACB80",
+    "banner": "#EE774D",
     "border": {
       "visible": true,
       "color": "#FFADE2"
@@ -50,7 +56,7 @@
       "highlightText": "#0C0623"
     },
     "commands": {
-      "textColor": "#FD9BDB"
+      "textColor": "#EC407A"
     }
   }
 }
