@@ -5,6 +5,10 @@ const helpObj = {
     "Who made this website?",
     ],
     [
+      "'join'",
+      "Join The Creative."
+    ],
+    [
       "'apps'",
       "Maybe there's something interesting."
     ],
@@ -17,7 +21,7 @@ const helpObj = {
     ],
     [
       "'repo'",
-      "View the Github Repository."
+      "View the Github repository."
     ],
     [
       "'docs'",
@@ -25,6 +29,10 @@ const helpObj = {
     ],
     ["'banner'",
       "Display the banner."
+    ],
+    [
+      "'mdm'",
+      "Mobile Device Managment (MDM) License"
     ],
     [
       "'clear'",

@@ -29,14 +29,16 @@ const PRE_USER = document.getElementById("pre-user");
 const HOST = document.getElementById("host");
 const USER = document.getElementById("user");
 const PROMPT = document.getElementById("prompt");
-const COMMANDS = ["help", "about", "apps", "join", "whoami", "docs", "banner", "clear"];
+const COMMANDS = ["help", "about", "apps", "mdm", "join", "whoami", "docs", "banner", "clear"];
 const HISTORY : string[] = [];
 const SUDO_PASSWORD = command.password;
 const REPO_LINK = command.repoLink;
 const DOCS_LINK = command.docsLink;
+const MDM_LINK = command.mdmLink;
 const LINKEDIN_LINK = command.social.linkedin;
 const GITHUB_LINK = command.social.github;
 const EMAIL_LINK = command.social.email;
+
 
 const scrollToBottom = () => {
   const MAIN = document.getElementById("main");
@@ -240,6 +242,12 @@ function commandHandler(input : string) {
       writeLines(["Redirecting to creativeplatform.xyz...", "<br>"]);
       setTimeout(() => {
         window.open(DOCS_LINK, '_blank');
+      }, 500);
+      break;
+    case 'mdm':
+      writeLines(["Redirecting to Creative MDM...", "<br>"]);
+      setTimeout(() => {
+        window.open(MDM_LINK, '_blank');
       }, 500);
       break;
     case 'repo':

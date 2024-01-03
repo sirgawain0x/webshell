@@ -13,6 +13,7 @@
   "password": "123019",
   "repoLink": "https://github.com/creativeplatform",
   "docsLink": "https://creativeplatform.xyz/docs/intro",
+  "mdmLink": "https://mdm.creativeplatform.xyz",
   "social": {
     "email": "creatives@creativeplatform.xyz",
     "github": "creativeplatform",
@@ -44,6 +45,11 @@
       "Creative TV",
       "Entertainment, your way",
       "https://tv.creativeplatform.xyz"
+    ],
+    [
+      "Creative Music",
+      "Innovative, tech-integrated music creation and sharing",
+      "https://music.creativeplatform.xyz"
     ]
   ],
   "join": [
