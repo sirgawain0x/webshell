@@ -20,7 +20,7 @@ const createBanner = () : string[] => {
   banner.push("<br>");
   banner.push("Welcome to Creative Platform v1.0.0");
   banner.push("Type <span class='command'>'help'</span> for a list of all available commands.");
-  banner.push(`Type <span class='command'>'apps'</span> to view a list of the Creative apps & tools.`);
+  banner.push(`Type <span class='command'>'apps'</span> to view a list of Creative apps & tools.`);
   banner.push("<br>");
   return banner;
 }
