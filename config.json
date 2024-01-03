@@ -23,12 +23,12 @@
   "apps": [
     [
       "Community Dashboard",
-      "Community Onboarding & Engagement Tool",
+      "Community onboarding & engagement tool",
       "https://app.charmverse.io/creative-like-brown-fowl/"
     ],
     [
       "Dear Creative Mini",
-      "Quick reads on creativity, tech, and blockchain",
+      "Quick reads on creativity & blockchain tech",
       "https://paragraph.xyz/@dearcrtv"
     ],
     [
@@ -38,7 +38,7 @@
     ],
     [
       "Vote",
-      "Shape Creative Org DAO's Future",
+      "Shape Creative Org DAO's future",
       "https://vote.creativeplatform.xyz"
     ],
     [
@@ -48,32 +48,38 @@
     ],
     [
       "Creative Music",
-      "Innovative, tech-integrated music creation and sharing",
+      "Innovative, tech-integrated music",
       "https://music.creativeplatform.xyz"
     ]
   ],
   "join": [
     [
       "Fan Membership",
-      "Ideal for creative and savvy fans, this tier offers community engagement without the cost",
+      "Free for collectors & fans",
       "https://app.unlock-protocol.com/checkout?id=28ea0271-209f-4c09-ac04-64ce714d0327"
     ],
     [
       "Creator Membership",
-      "Offering software tools and resources for creatives in arts & entertainment",
+      "Earn with our software tools & resources",
       "https://app.unlock-protocol.com/checkout?id=bbbcff5f-835d-4fa3-9761-988d5da9da18"
     ],
     [
       "Investor Membership",
-      "Exclusive access to investment opportunities, insights, and events in the creative ecosystem",
+      "Access to our investment opportunities",
       "https://app.unlock-protocol.com/checkout?id=7f9da384-5bae-4075-b02b-90bd197df113"
     ],
     [
       "Brand Membership",
-      "Great for businesses and brands for marketing, partnerships within the creative ecosystem",
+      "Marketing & partnerships with businesses and brands",
       "https://app.unlock-protocol.com/checkout?id=0c0b9948-f155-445e-9485-96b8d8b6bc6a"
     ]
   ],
+  "notificationsGreeting": "Opt-In 'Dear Creative' & 'The Creative Notifications'",
+  "notify": {
+    "metamask": "https://app.push.org/snap",
+    "ios": "https://apps.apple.com/us/app/push-epns/id1528614910",
+    "android": "https://play.google.com/store/apps/details?id=io.epns.epns"
+  },
   "colors": {
     "background": "#1A202C",
     "foreground": "#FACB80",

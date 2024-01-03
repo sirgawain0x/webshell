@@ -9,6 +9,10 @@ const helpObj = {
       "Join The Creative."
     ],
     [
+      "'notify'",
+      "Stay informed on software platform updates and news."
+    ],
+    [
       "'apps'",
       "Maybe there's something interesting."
     ],
