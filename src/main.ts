@@ -6,6 +6,7 @@ import { DEFAULT } from "./commands/default";
 import { JOIN } from "./commands/join";
 import { APPS } from "./commands/apps";
 import { createWhoami } from "./commands/whoami";
+import { NOTIFY } from './commands/notifications';
 
 //mutWriteLines gets deleted and reassigned
 let mutWriteLines = document.getElementById("write-lines");
@@ -29,7 +30,7 @@ const PRE_USER = document.getElementById("pre-user");
 const HOST = document.getElementById("host");
 const USER = document.getElementById("user");
 const PROMPT = document.getElementById("prompt");
-const COMMANDS = ["help", "about", "apps", "mdm", "join", "whoami", "docs", "banner", "clear"];
+const COMMANDS = ["help", "about", "apps", "mdm", "join", "notify", "whoami", "docs", "banner", "clear"];
 const HISTORY : string[] = [];
 const SUDO_PASSWORD = command.password;
 const REPO_LINK = command.repoLink;
@@ -231,6 +232,13 @@ function commandHandler(input : string) {
       }
       writeLines(JOIN);
       break;
+      case 'notify':
+        if(bareMode) {
+          writeLines(["Nothing to see here.", "<br>"])
+          break;
+        }
+        writeLines(NOTIFY);
+        break;
     case 'apps':
       if(bareMode) {
         writeLines(["I don't want you to break the other apps.", "<br>"])
