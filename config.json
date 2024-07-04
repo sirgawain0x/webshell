@@ -1,11 +1,11 @@
 {
   "ascii": [
-   "  ██████╗██████╗ ███████╗ █████╗ ████████╗██╗██╗   ██╗███████╗ ",
-   " ██╔════╝██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██║██║   ██║██╔════╝ ",
-   " ██║     ██████╔╝█████╗  ███████║   ██║   ██║██║   ██║█████╗ ", 
-   " ██║     ██╔══██╗██╔══╝  ██╔══██║   ██║   ██║╚██╗ ██╔╝██╔══╝ ",
-   " ╚██████╗██║  ██║███████╗██║  ██║   ██║   ██║ ╚████╔╝ ███████╗ ",
-   "  ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═══╝  ╚══════╝ "
+    "  ██████╗██████╗ ███████╗ █████╗ ████████╗██╗██╗   ██╗███████╗ ",
+    " ██╔════╝██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██║██║   ██║██╔════╝ ",
+    " ██║     ██████╔╝█████╗  ███████║   ██║   ██║██║   ██║█████╗ ",
+    " ██║     ██╔══██╗██╔══╝  ██╔══██║   ██║   ██║╚██╗ ██╔╝██╔══╝ ",
+    " ╚██████╗██║  ██║███████╗██║  ██║   ██║   ██║ ╚████╔╝ ███████╗ ",
+    "  ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═══╝  ╚══════╝ "
   ],
   "title": "The Creative",
   "username": "crtv",
@@ -22,14 +22,14 @@
   "aboutGreeting": "Explore for free as a Fan or join as Creator, Investor, Brand for unique perks.",
   "apps": [
     [
-      "Community Dashboard",
-      "Community onboarding & engagement tool",
-      "https://app.charmverse.io/creative-like-brown-fowl/"
+      "The Creative Leaderboard",
+      "Track Top Creators & Innovators",
+      "https://points.creativeplatform.xyz"
     ],
     [
-      "Dear Creative Mini",
-      "Quick reads on creativity & blockchain tech",
-      "https://paragraph.xyz/@dearcrtv"
+      "Member Dashboard",
+      "Community onboarding & engagement tool",
+      "https://app.charmverse.io/creative-like-brown-fowl/"
     ],
     [
       "Dear Creative",
@@ -38,7 +38,7 @@
     ],
     [
       "Vote",
-      "Shape Creative Org DAO's future",
+      "Shape the Creative's future",
       "https://vote.creativeplatform.xyz"
     ],
     [
@@ -58,7 +58,7 @@
     ],
     [
       "Creative Work",
-      "Empower artists & brands to earn & collaborate",
+      "Empowering artists & brands to collaborate & earn",
       "https://work.creativeplatform.xyz"
     ],
     [
