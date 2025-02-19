@@ -31,6 +31,9 @@ const createBanner = (): string[] => {
   banner.push(
     `Type <span class='command'>'apps'</span> to view a list of Creative apps & tools.`
   );
+  banner.push(
+    `Type <span class='command'>'chat {message}'</span> to chat with Creative Muse AI.`
+  );
   banner.push("<br>");
   return banner;
 };

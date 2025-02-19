@@ -7,12 +7,13 @@ import { JOIN } from "./commands/join";
 import { APPS } from "./commands/apps";
 import { createWhoami } from "./commands/whoami";
 import { NOTIFY } from "./commands/notifications";
+import { handleChat } from "./commands/chat";
 
 //mutWriteLines gets deleted and reassigned
 let mutWriteLines = document.getElementById("write-lines");
 let historyIdx = 0;
 let tempInput = "";
-let userInput: string;
+// let userInput: string;
 let isSudo = false;
 let isPasswordInput = false;
 let passwordCounter = 0;
@@ -43,6 +44,7 @@ const COMMANDS = [
   "docs",
   "banner",
   "clear",
+  "chat",
 ];
 const HISTORY: string[] = [];
 const SUDO_PASSWORD = command.password;
@@ -60,77 +62,67 @@ const scrollToBottom = () => {
   MAIN.scrollTop = MAIN.scrollHeight;
 };
 
-function userInputHandler(e: KeyboardEvent) {
+async function userInputHandler(e: KeyboardEvent) {
+  if (!USERINPUT) return;
   const key = e.key;
 
   switch (key) {
     case "Enter":
       e.preventDefault();
-      if (!isPasswordInput) {
-        enterKey();
-      } else {
-        passwordHandler();
-      }
-
+      await enterKey();
       scrollToBottom();
       break;
     case "Escape":
       USERINPUT.value = "";
       break;
     case "ArrowUp":
-      arrowKeys(key);
-      e.preventDefault();
-      break;
     case "ArrowDown":
+      e.preventDefault();
       arrowKeys(key);
       break;
     case "Tab":
-      tabKey();
       e.preventDefault();
+      tabKey();
+      break;
+    default:
       break;
   }
 }
 
-function enterKey() {
-  if (!mutWriteLines || !PROMPT) return;
-  const resetInput = "";
-  let newUserInput;
-  userInput = USERINPUT.value;
-
-  if (bareMode) {
-    newUserInput = userInput;
-  } else {
-    newUserInput = `<span class='output'>${userInput}</span>`;
-  }
-
-  HISTORY.push(userInput);
-  historyIdx = HISTORY.length;
-
-  //if clear then early return
-  if (userInput === "clear") {
-    commandHandler(userInput.toLowerCase().trim());
-    USERINPUT.value = resetInput;
-    userInput = resetInput;
+async function enterKey() {
+  if (!USERINPUT || !mutWriteLines) return;
+  if (isPasswordInput) {
+    passwordHandler();
     return;
   }
 
-  const div = document.createElement("div");
-  div.innerHTML = `<span id="prompt">${PROMPT.innerHTML}</span> ${newUserInput}`;
+  const input = USERINPUT.value.toLowerCase().trim();
+  HISTORY.unshift(input);
+  historyIdx = 0;
 
-  if (mutWriteLines.parentNode) {
-    mutWriteLines.parentNode.insertBefore(div, mutWriteLines);
-  }
+  const prompt = document.createElement("div");
+  prompt.className = "prompt";
+  prompt.innerHTML = `<span class="pre-user">╭─</span><span class="user">creative</span> <span class="pre-host">at</span> <span class="host">terminal</span> <span class="prompt">~/</span>`;
 
-  /*
-  if input is empty or a collection of spaces, 
-  just insert a prompt before #write-lines
-  */
-  if (userInput.trim().length !== 0) {
-    commandHandler(userInput.toLowerCase().trim());
-  }
+  const line = document.createElement("div");
+  line.className = "line";
+  const arrow = document.createElement("span");
+  arrow.className = "arrow";
+  arrow.textContent = "└─>";
+  line.appendChild(arrow);
 
-  USERINPUT.value = resetInput;
-  userInput = resetInput;
+  const command = document.createElement("span");
+  command.className = "command";
+  command.textContent = ` ${input}`;
+  line.appendChild(command);
+
+  mutWriteLines.appendChild(prompt);
+  mutWriteLines.appendChild(line);
+
+  USERINPUT.value = "";
+
+  await commandHandler(input);
+  scrollToBottom();
 }
 
 function tabKey() {
@@ -163,7 +155,22 @@ function arrowKeys(e: string) {
   }
 }
 
-function commandHandler(input: string) {
+async function commandHandler(input: string) {
+  // Handle chat command
+  if (input.startsWith("chat")) {
+    const message = input.substring(4).trim();
+    if (message) {
+      writeLines(["Sending message to AI...", "<br>"]);
+      const response = await handleChat(message);
+      writeLines(response);
+      return;
+    } else {
+      writeLines(["Usage: chat <message>", "<br>"]);
+      return;
+    }
+  }
+
+  // Handle rm -rf command
   if (input.startsWith("rm -rf") && input.trim() !== "rm -rf") {
     if (isSudo) {
       if (input === "rm -rf src" && !bareMode) {
@@ -461,15 +468,19 @@ const initEventListeners = () => {
     writeLines(BANNER);
   });
 
-  USERINPUT.addEventListener("keypress", userInputHandler);
-  USERINPUT.addEventListener("keydown", userInputHandler);
-  PASSWORD_INPUT.addEventListener("keypress", userInputHandler);
+  if (!USERINPUT || !PASSWORD_INPUT) return;
 
-  window.addEventListener("click", () => {
-    USERINPUT.focus();
+  USERINPUT.addEventListener("keydown", async (e) => {
+    await userInputHandler(e);
   });
 
-  // console.log(`%cPassword: ${command.password}`, "color: red; font-size: 20px;");
+  PASSWORD_INPUT.addEventListener("keydown", (e) => {
+    const key = e.key;
+    if (key === "Enter") {
+      e.preventDefault();
+      passwordHandler();
+    }
+  });
 };
 
 initEventListeners();
