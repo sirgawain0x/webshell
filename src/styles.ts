@@ -8,17 +8,30 @@ import command from '../config.json' assert {type: 'json'};
   const inputBackground = `input {background: ${command.colors.background}}`
   const inputForeground = `input {color: ${command.colors.prompt.input}}`
   const outputColor = `.output {color: ${command.colors.prompt.input}}`
-  const preHost = `#pre-host {color: ${command.colors.prompt.host}}`
-  const host = `#host {color: ${command.colors.prompt.host}}`
-  const preUser = `#pre-user {color: ${command.colors.prompt.user}}`
-  const user = `#user {color: ${command.colors.prompt.user}}`
-  const prompt = `#prompt {color: ${command.colors.prompt.default}}`
+  const preHost = `#pre-host, .pre-host {color: ${command.colors.prompt.host}}`
+  const host = `#host, .host {color: ${command.colors.prompt.host}}`
+  const preUser = `#pre-user, .pre-user {color: ${command.colors.prompt.user}}`
+  const user = `#user, .user {color: ${command.colors.prompt.user}}`
+  const prompt = `#prompt, .prompt {color: ${command.colors.prompt.default}}`
   const banner = `pre {color: ${command.colors.banner}}`
   const link = `a {color: ${command.colors.link.text}}`
   const linkHighlight = `a:hover {background: ${command.colors.link.highlightColor}}`
   const linkTextHighlight = `a:hover {color: ${command.colors.link.highlightText}}`
   const commandHighlight = `.command {color: ${command.colors.commands.textColor}}`
   const keys = `.keys {color: ${command.colors.banner}}`
+  const arrow = `.arrow {color: ${command.colors.prompt.default}}`
+  const aiResponse = `.ai-response {
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #4CAF50;
+    margin: 4px 0;
+    line-height: 1.4;
+  }`
+  const promptLine = `.prompt-line {
+    margin: 4px 0;
+    line-height: 1.4;
+  }`
 
   head.appendChild(style)
 
@@ -54,4 +67,7 @@ import command from '../config.json' assert {type: 'json'};
   style.sheet.insertRule(linkTextHighlight)
   style.sheet.insertRule(commandHighlight)
   style.sheet.insertRule(keys)
+  style.sheet.insertRule(aiResponse)
+  style.sheet.insertRule(promptLine)
+  style.sheet.insertRule(arrow)
 })()
