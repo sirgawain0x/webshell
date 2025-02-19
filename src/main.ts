@@ -101,13 +101,13 @@ async function enterKey() {
   historyIdx = 0;
 
   const prompt = document.createElement("div");
-  prompt.className = "prompt";
-  prompt.innerHTML = `<span class="pre-user">╭─</span><span class="user">creative</span> <span class="pre-host">at</span> <span class="host">terminal</span> <span class="prompt">~/</span>`;
+  prompt.className = "prompt-line";
+  prompt.innerHTML = `<span id="pre-host">╭─</span><span id="user">creative</span> <span id="pre-host">at</span> <span id="host">terminal</span> <span id="prompt">~/</span>`;
 
   const line = document.createElement("div");
   line.className = "line";
   const arrow = document.createElement("span");
-  arrow.className = "arrow";
+  arrow.id = "prompt";
   arrow.textContent = "└─>";
   line.appendChild(arrow);
 
