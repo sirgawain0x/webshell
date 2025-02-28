@@ -19,7 +19,7 @@
     "github": "creativeplatform",
     "linkedin": "creativeplatform"
   },
-  "aboutGreeting": "Explore for free as a Fan or join as Creator, Investor, Brand for unique perks.",
+  "aboutGreeting": "Explore for free as a Fan or subscribe as Creator, Investor, Brand for unique perks.",
   "apps": [
     [
       "The Creative Leaderboard",
@@ -28,7 +28,7 @@
     ],
     [
       "Member Dashboard",
-      "Community onboarding & engagement tool",
+      "Community Handbook",
       "https://app.charmverse.io/creative-like-brown-fowl/"
     ],
     [
@@ -67,26 +67,16 @@
       "https://marketplace.creativeplatform.xyz"
     ]
   ],
-  "join": [
+  "subscribe": [
     [
-      "Fan Membership",
-      "Free for collectors & fans",
+      "Free Membership",
+      "For collectors & fans",
       "https://app.unlock-protocol.com/checkout?id=28ea0271-209f-4c09-ac04-64ce714d0327"
     ],
     [
-      "Creator Membership",
-      "Earn with our software tools & resources",
-      "https://app.unlock-protocol.com/checkout?id=bbbcff5f-835d-4fa3-9761-988d5da9da18"
-    ],
-    [
-      "Investor Membership",
-      "Access to our investment opportunities",
-      "https://app.unlock-protocol.com/checkout?id=7f9da384-5bae-4075-b02b-90bd197df113"
-    ],
-    [
-      "Brand Membership",
-      "Marketing & partnerships with businesses and brands",
-      "https://app.unlock-protocol.com/checkout?id=0c0b9948-f155-445e-9485-96b8d8b6bc6a"
+      "Premium Memberships",
+      "Unlock your creativity",
+      "https://memberships.creativeplatform.xyz"
     ]
   ],
   "notificationsGreeting": "Opt-In 'Dear Creative' & 'The Creative Notifications'",

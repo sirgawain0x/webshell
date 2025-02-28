@@ -3,7 +3,7 @@ import { HELP } from "./commands/help";
 import { BANNER } from "./commands/banner";
 import { ABOUT } from "./commands/about";
 import { DEFAULT } from "./commands/default";
-import { JOIN } from "./commands/join";
+import { SUBSCRIBE } from "./commands/subscribe";
 import { APPS } from "./commands/apps";
 import { createWhoami } from "./commands/whoami";
 import { NOTIFY } from "./commands/notifications";
@@ -38,7 +38,7 @@ const COMMANDS = [
   "about",
   "apps",
   "mdm",
-  "join",
+  "subscribe",
   "notify",
   "whoami",
   "docs",
@@ -248,12 +248,12 @@ async function commandHandler(input: string) {
       }
       writeLines(ABOUT);
       break;
-    case "join":
+    case "subscribe":
       if (bareMode) {
         writeLines(["Nothing to see here.", "<br>"]);
         break;
       }
-      writeLines(JOIN);
+      writeLines(SUBSCRIBE);
       break;
     case "notify":
       if (bareMode) {
