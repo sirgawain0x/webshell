@@ -18,18 +18,18 @@ const createBanner = (): string[] => {
     banner.push(eleToPush);
   });
   banner.push("<br>");
-  banner.push("Welcome to The Creative v1.0.1");
+  banner.push("Welcome to The Creative v1.0.3");
   banner.push(
     "Type <span class='command'>'help'</span> for a list of all available commands."
   );
   banner.push(
-    `Type <span class='command'>'join'</span> to gain access to The Creative apps & tools.`
+    `Type <span class='command'>'subscribe'</span> to gain access to The Creative apps & tools.`
   );
   banner.push(
     `Type <span class='command'>'notify'</span> to stay informed on software updates and news.`
   );
   banner.push(
-    `Type <span class='command'>'apps'</span> to view a list of Creative apps & tools.`
+    `Type <span class='command'>'apps'</span> to access a suite of Creative apps & tools.`
   );
   banner.push(
     `Type <span class='command'>'chat {message}'</span> to chat with Creative Muse AI.`

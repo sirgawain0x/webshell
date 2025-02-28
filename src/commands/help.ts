@@ -1,7 +1,7 @@
 const helpObj = {
   commands: [
     ["'about'", "Who made this website?"],
-    ["'join'", "Join The Creative."],
+    ["'subscribe'", "subscribe to The Creative."],
     ["'notify'", "Stay informed on software platform updates and news."],
     ["'apps'", "Maybe there's something interesting."],
     ["'whoami'", "A perplexing question."],
